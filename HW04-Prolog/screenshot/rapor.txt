@@ -1,0 +1,45 @@
+PART1
+
+This file has the possible flights between some of the cities in Turkey.
+Route predicate whether it is possible to travel between cities.
+
+	flight(istanbul,antalya). % the fact that Istanbul and Antalya has a flight.
+
+	route(X,Y) :- flight(X,Y). % a predicate indicating there exist a route between
+	% X and Y if there is flight between X and Y.
+
+PART2
+
+	This file has the possible flights between some of the cities in Turkey.
+	Route predicate whether it is possible to travel between cities.  		
+	Sroute predicate is the shortest path for go city to another city. 
+
+
+	flight(istanbul, antalya). 
+	distance(istanbul, antalya, 481).
+	sroute(edremit,erzincan,X)	
+
+PART3
+
+	% facts
+
+	% Indicates the courses is which time it is.
+	when(a, 10).
+	
+	% Indicates the courses is which place in.
+	where(a, 101).
+
+	% Identify the courses strudents are enrolled in.
+	enroll(1, a).
+
+PART4
+
+	
+	% union predicate
+	% that finds the union of all the elements of L and S. The result will be bound to U.
+	% define two list. -> L,S
+	% find unions and add to U.
+
+
+	% intersection predicate
+	% that finds the intersection of L1 and L2 binding the results to I.
